@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RentDirect - Find Your Home</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            RentDirect
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+
+            <a href="#properties">Properties</a>
+
+            <a href="list-property.html">
+                List Property
+            </a>
+
+
+<a href="owner-dashboard.html">
+    Owner Dashboard
+</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <h1>
+            Find Your Home
+        </h1>
+
+        <p>
+            Rent directly from property owners. ₹0 Brokerage.
+        </p>
+
+
+        <!-- SEARCH -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchLocation"
+                placeholder="Enter city or area"
+            >
+
+
+            <select id="searchType">
+
+                <option value="">
+                    Property Type
+                </option>
+
+                <option value="Flat">
+                    Flat
+                </option>
+
+                <option value="House">
+                    House
+                </option>
+
+                <option value="Room">
+                    Room
+                </option>
+
+                <option value="PG">
+                    PG
+                </option>
+
+                <option value="Villa">
+                    Villa
+                </option>
+
+            </select>
+
+
+            <input
+                type="number"
+                id="searchRent"
+                placeholder="Max Rent"
+            >
+
+
+            <button id="searchButton">
+                Search
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROPERTY LISTINGS -->
+    <section
+        class="properties"
+        id="properties"
+    >
+
+        <h2>
+            Available Properties
+        </h2>
+
+
+        <!-- IMPORTANT:
+             Firebase properties will appear here.
+        -->
+
+        <div
+            class="property-container"
+            id="propertyContainer"
+        >
+
+            <p>
+                Loading properties...
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- OWNER SECTION -->
+    <section class="owner-section">
+
+        <h2>
+            Are you a Property Owner?
+        </h2>
+
+        <p>
+            List your property and find tenants directly.
+        </p>
+
+
+        <button
+            onclick="window.location.href='list-property.html'"
+        >
+            + List Your Property
+        </button>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>
+            RentDirect
+        </h3>
+
+        <p>
+            Find rental properties without brokerage.
+        </p>
+
+        <p>
+            © 2026 RentDirect
+        </p>
+
+    </footer>
+
+
+    <!-- FIREBASE + JAVASCRIPT -->
+
+    <script
+        type="module"
+        src="script.js">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>List Your Property - RentDirect</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            RentDirect
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#properties">
+                Properties
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- PAGE INTRO -->
+
+    <section class="owner-section">
+
+        <h2>
+            List Your Property 🏠
+        </h2>
+
+        <p>
+            Find tenants directly without traditional brokerage.
+        </p>
+
+    </section>
+
+
+
+    <!-- FORM -->
+
+    <section>
+
+        <form class="property-form">
+
+
+            <!-- OWNER INFORMATION -->
+
+            <h3>
+                👤 Owner Information
+            </h3>
+
+            <br>
+
+
+            <input
+                type="text"
+                name="ownerName"
+                placeholder="Owner Name"
+                required
+            >
+            <input
+    type="email"
+    name="email"
+    placeholder="Owner Email"
+    required>
+
+            <br><br>
+
+
+            <input
+                type="tel"
+                name="mobile"
+                placeholder="Mobile Number"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                required
+            >
+
+
+            <br><br><br>
+
+
+
+            <!-- PROPERTY INFORMATION -->
+
+            <h3>
+                🏠 Property Information
+            </h3>
+
+            <br>
+
+
+            <select
+                name="propertyType"
+                required
+            >
+
+                <option value="">
+                    Property Type
+                </option>
+
+                <option value="Flat">
+                    Flat
+                </option>
+
+                <option value="House">
+                    House
+                </option>
+
+                <option value="Room">
+                    Room
+                </option>
+
+                <option value="PG">
+                    PG
+                </option>
+
+                <option value="Villa">
+                    Villa
+                </option>
+
+            </select>
+
+
+            <br><br>
+
+
+            <select
+                name="bhk"
+                required
+            >
+
+                <option value="">
+                    BHK
+                </option>
+
+                <option value="1 BHK">
+                    1 BHK
+                </option>
+
+                <option value="2 BHK">
+                    2 BHK
+                </option>
+
+                <option value="3 BHK">
+                    3 BHK
+                </option>
+
+                <option value="4 BHK">
+                    4 BHK
+                </option>
+
+                <option value="5+ BHK">
+                    5+ BHK
+                </option>
+
+            </select>
+
+
+            <br><br>
+
+
+            <select
+                name="furnishing"
+                required
+            >
+
+                <option value="">
+                    Furnishing
+                </option>
+
+                <option value="Fully Furnished">
+                    Fully Furnished
+                </option>
+
+                <option value="Semi Furnished">
+                    Semi Furnished
+                </option>
+
+                <option value="Unfurnished">
+                    Unfurnished
+                </option>
+
+            </select>
+
+
+            <br><br>
+
+
+            <select
+                name="tenantPreference"
+                required
+            >
+
+                <option value="">
+                    Who can rent?
+                </option>
+
+                <option value="Family">
+                    Family
+                </option>
+
+                <option value="Bachelor">
+                    Bachelor
+                </option>
+
+                <option value="Anyone">
+                    Anyone
+                </option>
+
+            </select>
+
+
+            <br><br>
+
+
+            <select name="parking">
+
+                <option value="">
+                    Parking
+                </option>
+
+                <option value="Available">
+                    Available
+                </option>
+
+                <option value="Not Available">
+                    Not Available
+                </option>
+
+            </select>
+
+
+            <br><br><br>
+
+
+
+            <!-- LOCATION -->
+
+            <h3>
+                📍 Location
+            </h3>
+
+            <br>
+
+
+            <input
+                type="text"
+                name="city"
+                placeholder="City"
+                required
+            >
+
+
+            <br><br>
+
+
+            <input
+                type="text"
+                name="area"
+                placeholder="Area / Locality"
+                required
+            >
+
+
+            <br><br><br>
+
+
+
+            <!-- PRICE -->
+
+            <h3>
+                💰 Rent & Pricing
+            </h3>
+
+            <br>
+
+
+            <input
+                type="number"
+                name="rent"
+                placeholder="Monthly Rent ₹"
+                min="1"
+                required
+            >
+
+
+            <br><br>
+
+
+            <input
+                type="number"
+                name="deposit"
+                placeholder="Security Deposit ₹"
+                min="0"
+            >
+
+
+            <br><br><br>
+
+
+
+            <!-- OTHER DETAILS -->
+
+            <h3>
+                📋 Other Details
+            </h3>
+
+            <br>
+
+
+            <input
+                type="number"
+                name="bathrooms"
+                placeholder="Number of Bathrooms"
+                min="0"
+            >
+
+
+            <br><br>
+
+
+            <label for="availableFrom">
+                Available From
+            </label>
+
+
+            <br><br>
+
+
+            <input
+                type="date"
+                id="availableFrom"
+                name="availableFrom"
+            >
+
+
+            <br><br><br>
+
+
+
+            <!-- PHOTOS -->
+
+            <h3>
+                📸 Property Photos
+            </h3>
+
+            <br>
+
+
+            <input
+                type="file"
+                id="photos"
+                name="photos"
+                accept="image/*"
+                multiple
+            >
+
+
+            <small>
+                You can select multiple photos.
+            </small>
+
+
+            <br><br><br>
+
+
+
+            <!-- DESCRIPTION -->
+
+            <h3>
+                📝 Property Description
+            </h3>
+
+            <br>
+
+
+            <textarea
+                name="description"
+                placeholder="Describe your property, nearby facilities, rooms, etc."
+                required
+            ></textarea>
+
+
+            <br><br>
+
+
+            <!-- SUBMIT -->
+
+            <button
+                type="submit"
+            >
+                Submit Property 🚀
+            </button>
+
+
+        </form>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>
+            RentDirect
+        </h3>
+
+        <p>
+            Find your home directly from property owners.
+        </p>
+
+        <p>
+            © 2026 RentDirect
+        </p>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script
+        type="module"
+        src="script.js">
+    </script>
+
+
+</body>
+
+</html>

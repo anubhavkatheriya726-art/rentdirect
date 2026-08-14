@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Login - RentDirect</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .login-box {
+            width: 100%;
+            max-width: 420px;
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+
+        .login-button {
+            background: #1769ff;
+            color: white;
+        }
+
+        .google-button {
+            background: white;
+            color: #222;
+            border: 1px solid #ddd;
+        }
+
+        .phone-button {
+            background: #111827;
+            color: white;
+        }
+
+        .divider {
+            text-align: center;
+            color: #888;
+            margin: 10px 0 15px;
+        }
+
+        #message {
+            text-align: center;
+            margin-top: 10px;
+            color: #d00;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="login-box">
+
+        <div class="logo">
+            RentDirect
+        </div>
+
+        <p class="subtitle">
+            Admin Login
+        </p>
+
+
+        <!-- EMAIL LOGIN -->
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Admin Email"
+        >
+
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Password"
+        >
+
+
+        <button
+            class="login-button"
+            id="emailLogin"
+        >
+            Sign In
+        </button>
+
+
+        <div class="divider">
+            OR
+        </div>
+
+
+        <!-- GOOGLE -->
+
+        <button
+            class="google-button"
+            id="googleLogin"
+        >
+            Continue with Google
+        </button>
+
+
+        <!-- PHONE -->
+
+        <button
+            class="phone-button"
+            id="phoneLogin"
+        >
+            Login with Phone OTP
+        </button>
+
+
+        <p id="message"></p>
+
+    </div>
+
+
+    <script
+        type="module"
+        src="admin-login.js"
+    ></script>
+
+
+</body>
+
+</html>
